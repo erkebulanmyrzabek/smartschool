@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartSchool | Кіру</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-bg">
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="logo">SmartSchool</div>
+      <h2 id="form-title">Кіру</h2>
+
+      <!-- 🔹 Кіру формасы -->
+      <form id="login-form" class="auth-form">
+        <input type="email" id="email" placeholder="Email мекенжайы" required />
+        <input type="password" id="password" placeholder="Құпиясөз" required />
+        <button type="submit" class="btn">Кіру</button>
+
+        <p class="switch-text">
+          Аккаунтыңыз жоқ па?
+          <a href="#" id="to-register">Тіркелу</a>
+        </p>
+      </form>
+
+      <!-- 🔹 Тіркелу формасы -->
+      <form id="register-form" class="auth-form hidden">
+        <input type="text" id="name" placeholder="Атыңыз" required />
+        <input type="email" id="reg-email" placeholder="Email мекенжайы" required />
+        <input type="password" id="reg-password" placeholder="Құпиясөз" required />
+        
+        <select id="role" required>
+          <option value="" disabled selected>Рөліңізді таңдаңыз</option>
+          <option value="student">Оқушы</option>
+          <option value="teacher">Мұғалім</option>
+          <option value="admin">Әкімшілік</option>
+        </select>
+
+        <button type="submit" class="btn">Тіркелу</button>
+
+        <p class="switch-text">
+          Аккаунтыңыз бар ма?
+          <a href="#" id="to-login">Кіру</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "smartschool-project",
+  "version": "1.0.0",
+  "description": "SmartSchool - система управления школой",
+  "main": "routes/routes/server.js",
+  "scripts": {
+    "start": "node routes/routes/server.js",
+    "dev": "nodemon routes/routes/server.js",
+    "setup-db": "mysql -u root -p < backend/sql/schema.sql"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.3.0",
+    "socket.io": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
